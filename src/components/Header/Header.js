@@ -29,9 +29,19 @@ const Header = () => {
 const MainHeader = styled.div`
   padding: 0 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-evenly;
+  gap: 48px;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;
@@ -44,5 +54,35 @@ const NavLink = styled.a`
     color: ${COLORS.secondary};
   }
 `;
+
+
+// const MainHeader = styled.div`
+//   padding: 0 32px;
+//   border-bottom: 1px solid ${COLORS.gray[300]};
+//   height: 72px;
+//   display: flex;
+//   align-items: center;
+// `;
+
+// const Nav = styled.nav`
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   margin: 0 20%;
+//   width: 100%;
+//   justify-self: center;
+// `;
+
+// const NavLink = styled.a`
+//   font-size: 1.125rem;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   color: ${COLORS.gray[900]};
+//   font-weight: ${WEIGHTS.medium};
+
+//   &:first-of-type {
+//     color: ${COLORS.secondary};
+//   }
+// `;
 
 export default Header;
